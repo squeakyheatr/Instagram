@@ -24,6 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://secure-anchorage-35848.herokuapp.com/parse"
             })
         )
+        if PFUser.current() != nil {
+//            performSegue(withIdentifier: "LogInSegue", sender: nil)
+        }
         return true
     }
 
