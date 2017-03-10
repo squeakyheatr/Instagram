@@ -12,7 +12,7 @@ import Parse
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var homeTableView: UITableView!
-    var posts = [PFObject]()
+    var picposts = [PFObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
         homeTableView.dataSource = self
@@ -27,16 +27,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) -> Void in
             if let posts = posts {
                 //counts 3
-                print(posts.count)
+                print("count of posts \(posts.count)")
                 //not putting posts into self.post?
-                self.posts = posts
+                self.picposts = posts
+                self.homeTableView.reloadData()
             } else {
                 // handle error
                 print(error?.localizedDescription)
             }
         }
         //counts 0
-        print (posts.count)
+        print (picposts.count)
         self.homeTableView.reloadData()
         // Do any additional setup after loading the view.
     }
@@ -47,12 +48,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count ?? 0
+        return picposts.count ?? 0
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = homeTableView.dequeueReusableCell(withIdentifier: "HomeCell") as! PhotoTableViewCell
-        cell.post = posts[indexPath.row]
+        cell.post = picposts[indexPath.row]
 
         return cell
     }
