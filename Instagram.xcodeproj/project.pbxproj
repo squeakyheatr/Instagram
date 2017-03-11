@@ -13,11 +13,12 @@
 		492F1C491E7201520009E88C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F1C481E7201520009E88C /* PhotoTableViewCell.swift */; };
 		492F1C4B1E7208390009E88C /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F1C4A1E7208390009E88C /* ImagePickerController.swift */; };
 		492F1C4D1E720F300009E88C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F1C4C1E720F300009E88C /* Post.swift */; };
+		492F1C4F1E73905F0009E88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492F1C4E1E73905F0009E88C /* Assets.xcassets */; };
 		49BDF3DF1E6D335A00B8104D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDF3DE1E6D335A00B8104D /* AppDelegate.swift */; };
 		49BDF3E11E6D335A00B8104D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BDF3E01E6D335A00B8104D /* ViewController.swift */; };
 		49BDF3E41E6D335A00B8104D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BDF3E21E6D335A00B8104D /* Main.storyboard */; };
-		49BDF3E61E6D335A00B8104D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BDF3E51E6D335A00B8104D /* Assets.xcassets */; };
 		49BDF3E91E6D335A00B8104D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BDF3E71E6D335A00B8104D /* LaunchScreen.storyboard */; };
+		49FD78A11E74A29000E841ED /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD78A01E74A29000E841ED /* SignUpViewController.swift */; };
 		E7E402A4C82A6D2B266E2365 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91895E368F3FF456B76A3125 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,13 +29,14 @@
 		492F1C481E7201520009E88C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		492F1C4A1E7208390009E88C /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		492F1C4C1E720F300009E88C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		492F1C4E1E73905F0009E88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/Icon Dog/Assets.xcassets"; sourceTree = "<group>"; };
 		49BDF3DB1E6D335A00B8104D /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BDF3DE1E6D335A00B8104D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BDF3E01E6D335A00B8104D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49BDF3E31E6D335A00B8104D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		49BDF3E51E6D335A00B8104D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BDF3E81E6D335A00B8104D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BDF3EA1E6D335A00B8104D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FD78A01E74A29000E841ED /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91895E368F3FF456B76A3125 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CCC85F00B15E51903E6A2A /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		BDD6C9839C058E9EE90EAE38 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				492F1C441E7200A30009E88C /* ProfileViewController.swift */,
 				492F1C461E7201380009E88C /* HomeViewController.swift */,
 				492F1C4A1E7208390009E88C /* ImagePickerController.swift */,
+				49FD78A01E74A29000E841ED /* SignUpViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -106,7 +109,7 @@
 				49BDF3DE1E6D335A00B8104D /* AppDelegate.swift */,
 				49BDF3E01E6D335A00B8104D /* ViewController.swift */,
 				49BDF3E21E6D335A00B8104D /* Main.storyboard */,
-				49BDF3E51E6D335A00B8104D /* Assets.xcassets */,
+				492F1C4E1E73905F0009E88C /* Assets.xcassets */,
 				49BDF3E71E6D335A00B8104D /* LaunchScreen.storyboard */,
 				49BDF3EA1E6D335A00B8104D /* Info.plist */,
 			);
@@ -193,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BDF3E91E6D335A00B8104D /* LaunchScreen.storyboard in Resources */,
-				49BDF3E61E6D335A00B8104D /* Assets.xcassets in Resources */,
+				492F1C4F1E73905F0009E88C /* Assets.xcassets in Resources */,
 				49BDF3E41E6D335A00B8104D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +262,7 @@
 				492F1C4D1E720F300009E88C /* Post.swift in Sources */,
 				492F1C451E7200A30009E88C /* ProfileViewController.swift in Sources */,
 				49294B011E6D368E0063DCC6 /* SignInViewController.swift in Sources */,
+				49FD78A11E74A29000E841ED /* SignUpViewController.swift in Sources */,
 				492F1C4B1E7208390009E88C /* ImagePickerController.swift in Sources */,
 				492F1C471E7201380009E88C /* HomeViewController.swift in Sources */,
 			);

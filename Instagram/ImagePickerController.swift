@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class ImagePickerController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -15,7 +16,7 @@ class ImagePickerController: UIViewController, UIImagePickerControllerDelegate, 
     var originalImage: UIImage!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        commentTextView.text = "Caption the moment!"
         // Do any additional setup after loading the view.
     }
 
@@ -54,7 +55,7 @@ class ImagePickerController: UIViewController, UIImagePickerControllerDelegate, 
         //let editedImage = info[UIImagePickerControllerEditedImage] as! UIImage
         photoImage.image = originalImage
         // Do something with the images (based on your use case)
-        
+        photoImage.isHidden = false
         // Dismiss UIImagePickerController to go back to your original view controller
         dismiss(animated: true, completion: nil)
     }
@@ -64,9 +65,15 @@ class ImagePickerController: UIViewController, UIImagePickerControllerDelegate, 
         dismiss(animated: true, completion: nil)
     }
     @IBAction func postImage(_ sender: Any) {
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         Post.postUserImage(image: originalImage, withCaption: commentTextView.text) { (success: Bool, error: Error?) in
             print("Posted")
+            self.tabBarController?.selectedIndex = 0
+            self.photoImage.isHidden = true
+            self.commentTextView.text = "Caption the moment!"
+            MBProgressHUD.hide(for: self.view, animated: true)
         }
+
     }
 
 

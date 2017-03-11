@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import Parse
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet var currentUserLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -23,7 +26,13 @@ class ProfileViewController: UIViewController {
     
 
     @IBAction func onLogOut(_ sender: Any) {
-        
+        PFUser.logOutInBackground { (error: Error?) in
+            // PFUser.currentUser() will now be nil
+            print("User is logged out")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
+            self.present(nextViewController, animated:true, completion:nil)
+        }
     }
     /*
     // MARK: - Navigation

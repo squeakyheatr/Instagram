@@ -25,7 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         if PFUser.current() != nil {
-//            performSegue(withIdentifier: "LogInSegue", sender: nil)
+            print("There is a current User")
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "InstagramTabController")
+            
+            window?.rootViewController = vc
         }
         return true
     }

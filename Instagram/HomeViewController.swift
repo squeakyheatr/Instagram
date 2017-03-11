@@ -31,6 +31,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 //not putting posts into self.post?
                 self.picposts = posts
                 self.homeTableView.reloadData()
+
             } else {
                 // handle error
                 print(error?.localizedDescription)

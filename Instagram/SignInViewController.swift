@@ -35,26 +35,8 @@ class SignInViewController: UIViewController {
         }
     }
 
-    @IBAction func onSignUp(_ sender: Any) {
-        let newUser = PFUser()
-        newUser.username = userNameTextField.text
-        newUser.password = passwordTextFField.text
         
-        newUser.signUpInBackground { (success: Bool, error: Error?) in
-            if success {
-                print("Created User")
-                self.performSegue(withIdentifier: "LogInSegue", sender: nil)
-
-            } else {
-                let nsError = error as? NSError
-                print(error?.localizedDescription)
-                if nsError?.code == 202 {
-                    print("UserName already taken")
-                }
-            }
-        }
-        
-    }
+}
     /*
     // MARK: - Navigation
 
@@ -65,4 +47,4 @@ class SignInViewController: UIViewController {
     }
     */
 
-}
+

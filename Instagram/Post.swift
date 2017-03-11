@@ -10,6 +10,7 @@ import UIKit
 import Parse
 
 class Post: NSObject {
+    var user: PFUser!
     /**
      * Other methods
      */
