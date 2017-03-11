@@ -16,8 +16,8 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Show the username and creation time for each post
-- [ ] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse.
+- [X] Show the username and creation time for each post
+- [X] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse.
 - [ ] User Profiles:
    - [ ] Allow the logged in user to add a profile photo
    - [ ] Display the profile photo with each post
@@ -29,6 +29,13 @@ The following **additional** features are implemented:
 - Added alert sheet
 - Checked if camera is available
 - If camera not available, app will not crash
+- Added app icon
+- Added splash screen
+- Added custom tab pictures
+- Added custom Add Photo Picture
+- While posting page will wait until completed to go back to bome feed
+- Added sign up view controller
+- Many changes to the UI (Mostly Backgrounds)
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
@@ -39,7 +46,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![alt tag](Instagram2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
