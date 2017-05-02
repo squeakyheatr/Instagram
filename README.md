@@ -37,11 +37,6 @@ The following **additional** features are implemented:
 - Added sign up view controller
 - Many changes to the UI (Mostly Backgrounds)
 
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1. 
-2. 
-
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
@@ -52,11 +47,11 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Pictures make apps more beautiful.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [SqueakyHeatr]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
